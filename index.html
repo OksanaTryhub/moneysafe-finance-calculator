@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link href="css/overlayscrollbars.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  <script src="js/script.js" type="module"></script>
+
+  <title>MoneySafe</title>
+</head>
+
+<body>
+  <div class="circle-1"></div>
+  <div class="circle-2"></div>
+  <div class="circle-3"></div>
+  <section class="finance ">
+    <h1 class="visually-hidden">Save your money! Earn and spend it wisely, and we will help you control it</h1>
+    <div class="container">
+      <div class="inner">
+      <header class="finance__header">
+        <img class="finance__logo" src="./img/logo-new.png" alt="Логотип MoneySafe">
+        <div class="finance__btn">
+          <select class="finance__currency" aria-label="Currency">
+            <option value="UAH" selected class="finance__currency--option">UAH</option>
+            <option value="USD" class="finance__currency--option">USD</option>
+            <option value="EUR" class="finance__currency--option">EUR</option>
+            <option value="GBP" class="finance__currency--option">GBP</option>
+            <option value="TRY" class="finance__currency--option">TRY</option>
+          </select>
+          <button class="finance__report">Report</button>
+        </div>
+      </header>
+
+      <form class="finance__form">
+        <fieldset class="finance__details">
+          <input class="finance__input finance__input--category" type="text"
+            name="category" list="categoryList" placeholder="Select category"
+            required>
+
+          <datalist id="categoryList">
+            <!-- <option value="Продукты питания"></option>
+            <option value="Транспорт"></option>
+            <option value="Жилье"></option>
+            <option value="Развлечения"></option>
+            <option value="Одежда"></option> -->
+          </datalist>
+
+          <input type="number" class="finance__input finance__input--amount"
+            placeholder="Enter amount" name="amount" required>
+
+          <textarea class="finance__description" name="description"
+            placeholder="Describe operation" required></textarea>
+        </fieldset>
+
+        <fieldset class="finance__balance">
+          <button class="finance__button" type="submit"
+            data-type-operation="expenses" aria-label="Добавить расходы">
+            <svg class="finance__button--icon" width="800" height="800" viewBox="0 -12 32 32" xmlns="http://www.w3.org/2000/svg">
+              <path d="M28 0H4a4 4 0 1 0 0 8h24a4 4 0 1 0 0-8" />
+            </svg>
+          </button>
+
+          <!-- <div class="finance__amount"> -->
+            <p class="finance__amount">0</p>
+          <!-- </div> -->
+
+          <button class="finance__button" type="submit"
+            data-type-operation="income" aria-label="Добавить доходы"> 
+            <svg class="finance__button--icon" width="800" height="800" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+              <path d="M28 12h-8V4a4 4 0 1 0-8 0v8H4a4 4 0 1 0 0 8h8v8a4 4 0 1 0 8 0v-8h8a4 4 0 1 0 0-8" />
+            </svg>
+          </button>
+        </fieldset>
+      </form>
+
+      <div class="report">
+        <div class="container report__container">
+          <h2 class="report__title">Report</h2>
+
+          <form class="report__dates">
+            <div class="report__date">
+              <label for="start-date">Start date</label>
+              <input type="date" id="start-date" name="startDate">
+            </div>
+
+            <div class="report__date">
+              <label for="end-date">End date</label>
+              <input type="date" id="end-date" name="endDate">
+            </div>
+
+            <button class="report__button">Show</button>
+          </form>
+
+          <table class="report__table">
+            <thead>
+              <tr>
+                <th class="report__header-cell" data-sort="category" data-dir="up">Category</th>
+                <th class="report__header-cell report__table-amount" data-sort="amount" data-dir="up">Amount</th>
+                <th class="report__header-cell" data-sort="description" data-dir="up">Description</th>
+                <th class="report__header-cell" data-sort="date" data-dir="up">Date</th>
+                <th class="report__header-cell" data-sort="type" data-dir="up">Operation</th>
+                <th class="report__header-cell"></th>
+                <!-- Пустая ячейка для симметрии -->
+              </tr>
+            </thead>
+
+            <tbody class="report__operation-list">
+            </tbody>
+          </table>
+
+          <button class="report__add-button"
+            id="generateChartButton">Build graph</button>
+
+          <div class="report__chart"></div>
+
+          <button class="report__close">&#10006;</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+
+
+</body>
+
+</html>
