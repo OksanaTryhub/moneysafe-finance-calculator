@@ -15,7 +15,7 @@
 - **Візуалізація Графіків:** Інтерактивні графіки для візуалізації доходів, витрат та загального балансу.
 - **Вибір Періоду Часу:** Користувачі можуть обрати конкретний часовий проміжок для відображення таблиці та побудови графіка.
  
-# [Moneysafe Finance Calculator](moneysafe-finance-calculator.vercel.app)
+# [Moneysafe Finance Calculator](https://moneysafe-finance-calculator.vercel.app/)
 
 ========================================================================
 # Moneysafe Finance Calculator
@@ -37,4 +37,4 @@ Welcome to the **Moneysafe Finance Calculator** project! This small pet project 
  
 Feel free to explore and modify the code to suit your needs!
 
-# [Moneysafe Finance Calculator](moneysafe-finance-calculator.vercel.app)
+# [Moneysafe Finance Calculator](https://moneysafe-finance-calculator.vercel.app/)
