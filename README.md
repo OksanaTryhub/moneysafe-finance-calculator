@@ -1,5 +1,5 @@
 # Moneysafe Finance Calculator
-Запрошую до проекту калькулятора фінансів Moneysafe! Цей невеликий пет-проект написаний на JavaScript і дозволяє користувачу відстежувати свій дохід та витрати, категоризуючи їх для зручності управління. Він має відображення балансу, візуалізацію діаграм (дохід, витрати, баланс) та можливість вибору періоду часу для відображення таблиці та побудови графіка.
+Запрошую до проекту **Калькулятор фінансів Moneysafe**! Цей невеликий пет-проект написаний на JavaScript і дозволяє користувачу відстежувати свій дохід та витрати, категоризуючи їх для зручності управління. Він має відображення балансу, візуалізацію діаграм (дохід, витрати, баланс) та можливість вибору періоду часу для відображення таблиці та побудови графіка.
 
 ## Technologies
 - **JavaScript (JS):** Основна мова проекту.
@@ -19,7 +19,7 @@
 
 ========================================================================
 # Moneysafe Finance Calculator
-Welcome to the Moneysafe Finance Calculator project! This small pet project is written in JavaScript and allows users to track their income and expenses, categorized for better management. It features a balance display, chart visualization (income, expenses, balance), and the ability to select a time period for table display and chart plotting.
+Welcome to the **Moneysafe Finance Calculator** project! This small pet project is written in JavaScript and allows users to track their income and expenses, categorized for better management. It features a balance display, chart visualization (income, expenses, balance), and the ability to select a time period for table display and chart plotting.
 
 ## Technologies
 - **JavaScript (JS):** the core language used for the project.
